@@ -1,8 +1,5 @@
 import requests
 import re
-import tempfile
-
-url = "https://www.mercari.com/shipping/label/?id=108099172&token=1a62c62a74abc11448f791f09acf17e454a10201&sc=1302"
 
 def crop_pdf(url):
     payload={}
