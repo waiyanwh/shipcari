@@ -21,7 +21,7 @@ def handle():
     temp = BytesIO()
     image.save(temp, format="JPEG")
     temp.seek(0)
-    return send_file(temp, mimetype='image/jpeg', as_attachment=False, attachment_filename=f"{uuid.uuid4().hex[:8]}.jpg")
+    return send_file(temp, mimetype='image/jpeg', as_attachment=True, attachment_filename=f"{uuid.uuid4().hex[:8]}.jpg")
 
 if __name__ == '__main__':
     app.run(debug=False, host='0.0.0.0', port=8000)
