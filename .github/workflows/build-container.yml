@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  BuildImage:
+  build_image:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
